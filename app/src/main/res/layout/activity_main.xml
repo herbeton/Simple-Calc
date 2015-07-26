@@ -1,0 +1,194 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/displayNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o numero!"
+        android:textSize="20dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="4"
+        android:layout_gravity="center">
+
+        <Button
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="CA"
+            android:onClick="limparTela"/>
+
+        <Button
+            android:id="@+id/btnRaizQuadrada"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="√"
+            android:onClick="btRaizQuadrada"/>
+
+        <Button
+            android:id="@+id/btnPorcentagem"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:onClick="btPorcentagem"/>
+
+        <Button
+            android:id="@+id/btnLimparUm"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:onClick="btLimparUm"/>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnMais"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:onClick="soma"/>
+        <Button
+            android:id="@+id/btnMenos"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:onClick="subtracao"/>
+        <Button
+            android:id="@+id/btnVezes"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:onClick="multiplicacao"/>
+        <Button
+            android:id="@+id/btnDiv"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:onClick="divisao"/>
+        <Button
+            android:id="@+id/btn1"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:onClick="bt1"/>
+        <Button
+            android:id="@+id/btn2"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:onClick="bt2"/>
+        <Button
+            android:id="@+id/btn3"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:onClick="bt3"/>
+        <Button
+            android:id="@+id/btn4"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:onClick="bt4"/>
+        <Button
+            android:id="@+id/btn5"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:onClick="bt5"/>
+        <Button
+            android:id="@+id/btn6"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:onClick="bt6"/>
+        <Button
+            android:id="@+id/btn7"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:onClick="bt7"/>
+        <Button
+            android:id="@+id/btn8"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:onClick="bt8"/>
+        <Button
+            android:id="@+id/btn9"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:onClick="bt9"/>
+        <Button
+            android:id="@+id/btn0"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:onClick="bt0"/>
+        <Button
+            android:id="@+id/btnVirgula"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:onClick="btVirgula"/>
+
+        <Button
+            android:id="@+id/btnIgual"
+            android:textSize="25dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:onClick="igual"/>
+
+
+    </GridLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:layout_gravity="fill"
+        android:textSize="30dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/boxResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100dp"/>
+
+    </ScrollView>
+
+
+</LinearLayout>
